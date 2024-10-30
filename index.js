@@ -36,9 +36,7 @@ const DB = [
     }
 ];
 
-
-const getNextId = () => 
-    DB.length > 0?  Math.max(...DB.map(user => user.id)) + 1 : 0;
+const getNextId = () => Date.now();
 
 
 app.get("/", (req, res) => {
