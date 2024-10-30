@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const port = 8080;
 
+const cors = require('cors');
+app.use(cors());
+
 
 app.use(express.json());
 
@@ -10,22 +13,22 @@ const DB = [
     {
         id: 0,
         text: "Text a",
-        backgroundColor: "#4CAF50"
+        backgroundColor: "color1"
     },
     {
         id: 1,
         text: "Text b",
-        backgroundColor: "#ADD8E6"
+        backgroundColor: "color1"
     },
     {
         id: 2,
         text: "Text c",
-        backgroundColor: "#D8BFD8"
+        backgroundColor: "color1"
     },
     {
         id: 3,
         text: "Text d",
-        backgroundColor: "#FFA500"
+        backgroundColor: "color1"
     }
 ];
 
@@ -52,7 +55,6 @@ app.post("/", (req, res) => {
 });
 
 app.patch('/:id', (req, res) => {
-    console.log(req.body);
     const id = req.params.id;
     let cardIndex = DB.findIndex(card => card.id == id);
 
@@ -61,6 +63,7 @@ app.patch('/:id', (req, res) => {
     DB[cardIndex] = { ...DB[cardIndex], ...req.body };
     res.json(DB[cardIndex]);
 });
+
 
 app.delete('/:id', (req, res) => {
     const id = req.params.id;
