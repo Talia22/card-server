@@ -12,22 +12,22 @@ app.use(express.json());
 const DB = [
     {
         id: 0,
-        text: "Text a",
+        text: "Enter text",
         backgroundColor: "color1"
     },
     {
         id: 1,
-        text: "Text b",
+        text: "Enter text",
         backgroundColor: "color1"
     },
     {
         id: 2,
-        text: "Text c",
+        text: "Enter text",
         backgroundColor: "color1"
     },
     {
         id: 3,
-        text: "Text d",
+        text: "Enter text",
         backgroundColor: "color1"
     }
 ];
