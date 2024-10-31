@@ -14,17 +14,17 @@ Full CRUD.
 ## Installation
 
 1. **Clone the repository:**
-    git clone <https://github.com/Talia22/card-server>
+    - git clone <https://github.com/Talia22/card-server>
 
 
 2. **Install dependencys:**
-    cd <card-server>
-    npm install
+    - cd card-server
+    - npm install
 
 3. **Usage:**
-    node index.js
-    The server will run on http://localhost:8080.
-    Start the client: https://github.com/Talia22/card-client
+    - node index.js
+    - The server will run on http://localhost:8080.
+    - Start the client: https://github.com/Talia22/card-client
     
 
 
